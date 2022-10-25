@@ -1,0 +1,1975 @@
+/*--------------------------------------------------------------
+Theme Name: EnterMedSchool
+Version: 1.0.0 
+
+Authors: Stefan Stax | Karthik Nandula - for assistance reach one of the two mentioned names
+--------------------------------------------------------------*/
+
+/* TODO - Presents Section or part of the website */
+/* ! - Stylign needs permission from other devs to be played with */
+/* ? - Presents block on the website or mini part */
+
+/* * Global CSS elements */
+p:empty {
+  display: none !important;
+}
+
+.light {
+  color: #f9f9f9;
+}
+.solid-black {
+  /* color: rgba(21, 83, 91, 1); */
+  color: var(--solid-black);
+}
+.bg-green {
+  background-color: rgba(21, 83, 91, 1);
+  border: rgba(21, 83, 91, 1);
+  transition: all 0.5s ease-in-out;
+}
+.bg-lipstick {
+  background-color: salmon;
+  border: salmon;
+}
+.w-100 {
+  width: 100%;
+}
+.tc {
+  text-align: center;
+}
+.fw {
+  font-weight: 900;
+}
+.fb {
+  font-weight: 700;
+}
+.ts80 {
+  font-size: 80px;
+}
+.ts100 {
+  font-size: 100px;
+}
+.lh80 {
+  line-height: 80px;
+}
+.lh70 {
+  line-height: 70px;
+}
+.ts50 {
+  font-size: 50px;
+}
+.ts40 {
+  font-size: 40px;
+}
+.ts30 {
+  font-size: 30px;
+}
+.ts25 {
+  font-size: 25px;
+}
+.ts20 {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .ts100 {
+    font-size: 40px;
+  }
+  .lh90 {
+    line-height: 44px;
+  }
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+/* ! Website Fonts | start */
+/* @import url("https://use.typekit.net/yta1rhe.css");
+ */
+
+@font-face {
+  font-family: "proxima-soft";
+  src: url("https://use.typekit.net/af/0371ef/00000000000000007735af84/30/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n3&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/0371ef/00000000000000007735af84/30/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n3&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/0371ef/00000000000000007735af84/30/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n3&v=3")
+      format("opentype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "proxima-soft";
+  src: url("https://use.typekit.net/af/a727c9/00000000000000007735af8e/30/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/a727c9/00000000000000007735af8e/30/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/a727c9/00000000000000007735af8e/30/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n4&v=3")
+      format("opentype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "proxima-soft";
+  src: url("https://use.typekit.net/af/46ebd4/00000000000000007735af97/30/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n5&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/46ebd4/00000000000000007735af97/30/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n5&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/46ebd4/00000000000000007735af97/30/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n5&v=3")
+      format("opentype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "proxima-soft";
+  src: url("https://use.typekit.net/af/81cbd6/00000000000000007735afa9/30/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n7&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/81cbd6/00000000000000007735afa9/30/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n7&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/81cbd6/00000000000000007735afa9/30/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n7&v=3")
+      format("opentype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "proxima-soft";
+  src: url("https://use.typekit.net/af/8611c0/00000000000000007735afb7/30/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n9&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/8611c0/00000000000000007735afb7/30/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n9&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/8611c0/00000000000000007735afb7/30/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n9&v=3")
+      format("opentype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.tk-proxima-soft {
+  font-family: "proxima-soft", sans-serif;
+}
+
+body {
+  font-family: "proxima-soft", sans-serif !important;
+}
+
+.bb-custom-typo h1,
+.bb-custom-typo .h1,
+.bb-custom-typo h2,
+.bb-custom-typo .h2,
+.bb-custom-typo h3,
+.bb-custom-typo .h3,
+.bb-custom-typo h4,
+.bb-custom-typo .h4,
+.bb-custom-typo h5,
+.bb-custom-typo .h5,
+.bb-custom-typo h6,
+.bb-custom-typo .h6,
+.bb-custom-typo .bb-course-footer,
+.bb-custom-typo .ld-table-list-header .ld-text,
+.bb-custom-typo .gamipress-achievement-points,
+.bb-custom-typo .vjs-modal-dialog-content {
+  font-family: "proxima-soft", sans-serif !important;
+}
+
+body p,
+a,
+li {
+  font-weight: 400;
+}
+
+body h1 {
+  font-weight: 900;
+}
+
+body h2 {
+  font-weight: 700;
+}
+
+body h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+body p,
+a {
+  font-size: 16px;
+}
+
+body p {
+  margin-bottom: 0.5rem;
+}
+
+body div.fl_width.footer p,
+body div.fl_width.footer a {
+  font-size: 16px !important;
+}
+/* ! Website Fonts | end */
+
+/* ! Yellow Pencil | START - DISCOUNTINUED > 3MONTHS */
+ul.component-navigation.activity-nav li.dynamic {
+  padding: 5px !important;
+}
+ul.component-navigation.activity-nav li.dynamic.selected {
+  background-color: var(--newsfeed-tabs-bg) !important;
+  border-radius: 10px !important;
+  font-weight: 600 !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+ul.component-navigation.activity-nav li.dynamic a {
+  padding: 5px !important;
+  border-bottom-style: none;
+  font-weight: 600;
+  color: var(--newsfeed-tabs-text) !important;
+}
+
+ul.component-navigation.activity-nav li.dynamic.selected a {
+  color: var(--newsfeed-tabs--active-text) !important;
+}
+
+/* * Responsive */
+@media only screen and (max-width: 600px) {
+  ul.component-navigation.activity-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  ul.component-navigation.activity-nav li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-basis: 50%;
+    flex: 1 1 50%;
+  }
+}
+/* ? Yellow Pencil | END */
+
+/* Page entry content fixes | START */
+/* body:not(.sfwd-courses-template-default) div#primary {
+  margin-top: calc(110px + 30px) !important;
+}
+
+body.admin-bar:not(.sfwd-courses-template-default) div#primary {
+  margin-top: calc(156px + 30px) !important;
+}
+
+@media (min-width: 968px) {
+  body:not(.sfwd-courses-template-default) div#primary {
+    margin-top: calc(90px + 30px) !important;
+  }
+
+  body.admin-bar:not(.sfwd-courses-template-default) div#primary {
+    margin-top: calc(122px + 30px) !important;
+  }
+} */
+/* Page entry content fixes | END */
+
+/* TODO Sections | Backgrounds */
+
+/* ? Admin Styling Updates | START */
+a > span.is-admin {
+  color: #b33045 !important;
+}
+/* ? Admin Styling Updates | END */
+
+/* ? Volunteer Styling Updates | START */
+a > span.is-volunteer {
+  color: #0b7f70 !important;
+}
+/* ? Volunteer Styling Updates | END */
+
+/* ? Donators Styling Updates | START */
+a > span.is-donor {
+  color: #0080ed !important;
+}
+/* ? Donators Styling Updates | END */
+
+/* !! Plugins */
+
+/* ? Slick Slider | start */
+/* ? Slick Slider | end */
+
+/* ? Learndash Plugin | START */
+
+/* * List of lectures going on top of content @fix */
+.lms-lessions-list {
+  z-index: 0 !important;
+}
+
+/* ! Lessons closed @fix */
+.lms-topic-sidebar-wrapper.lms-topic-sidebar-close,
+.lms-topic-sidebar-wrapper.lms-topic-sidebar-close .lms-topic-sidebar-data {
+  left: -100% !important;
+}
+
+/* ! Lessons data sticking out of the container @plugin-issue @fix */
+.bb-lesson-head {
+  max-width: calc(100% - 60px) !important;
+}
+
+/* ! Disable fixed navigation, breaking layout @fix */
+.lms-topic-sidebar-wrapper .lms-topic-sidebar-data {
+  position: fixed !important;
+  top: 0px !important;
+  padding-top: 170px !important;
+  padding-bottom: 150px !important;
+  height: 100%;
+}
+
+body.single-sfwd-lessons .lms-topic-sidebar-wrapper .lms-topic-sidebar-data,
+body.single-sfwd-topic .lms-topic-sidebar-wrapper .lms-topic-sidebar-data,
+body.single-sfwd-quiz .lms-topic-sidebar-wrapper .lms-topic-sidebar-data {
+  padding: 15px 0;
+  font-size: 15px;
+  overflow-y: auto;
+}
+
+/* .lms-topic-sidebar-data {
+  height: calc(100vh - 15vh)!important;
+} */
+
+/* * Learn dash course page spacing on sides & gray background > white @fix */
+.bb-sfwd-aside .site-content .container .content-area {
+  padding: 0px !important;
+  background-color: white !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .lms-topic-sidebar-wrapper {
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .lms-topic-sidebar-data {
+    max-width: 98vw !important;
+    height: 100% !important;
+    max-height: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  div.lms-topic-sidebar-wrapper > div.lms-topic-sidebar-data {
+    max-width: 100%;
+    width: 334px;
+    overflow-y: scroll;
+    z-index: 1 !important;
+  }
+}
+
+div.wpProQuiz_content .wpProQuiz_reviewQuestion {
+  min-height: 250px !important;
+}
+
+body.bb-dark-theme blockquote,
+body.bb-dark-theme div.comment-text p {
+  color: #f9f9f9 !important;
+}
+
+/* * Quiz correct / incorrerct colors */
+li.wpProQuiz_questionListItem.wpProQuiz_answerCorrect,
+div.wpProQuiz_reviewQuestion li.wpProQuiz_reviewQuestionSolvedIncorrect {
+  background-color: #00c349 !important;
+}
+li.wpProQuiz_questionListItem.wpProQuiz_answerCorrect label,
+div.wpProQuiz_reviewQuestion li.wpProQuiz_reviewQuestionSolvedIncorrect {
+  color: white !important;
+}
+
+li.wpProQuiz_questionListItem.wpProQuiz_answerIncorrect,
+div.wpProQuiz_reviewQuestion li.wpProQuiz_reviewQuestionSolvedIncorrect {
+  background-color: crimson !important;
+}
+li.wpProQuiz_questionListItem.wpProQuiz_answerIncorrect label,
+div.wpProQuiz_reviewQuestion li.wpProQuiz_reviewQuestionSolvedIncorrect {
+  color: white !important;
+}
+
+li.wpProQuiz_questionListItem.wpProQuiz_answerCorrectIncomplete {
+  background-color: #00c349 !important;
+}
+li.wpProQuiz_questionListItem.wpProQuiz_answerCorrectIncomplete label {
+  color: white !important;
+}
+
+li.wpProQuiz_questionListItem label {
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+}
+
+div.wpProQuiz_reviewQuestion {
+  background-color: #fff !important;
+  border: none !important;
+}
+
+div.wpProQuiz_reviewQuestion li.wpProQuiz_reviewQuestionSolvedCorrect {
+  background-color: #00c349 !important;
+  color: white !important;
+}
+
+div.wpProQuiz_reviewQuestion li.wpProQuiz_reviewQuestionSolved {
+  background-color: #1d58aa !important;
+  color: #f9f9f9 !important;
+  position: relative;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+div.wpProQuiz_reviewQuestion li.wpProQuiz_reviewQuestionSolved::after {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: #6ca54c;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+div.wpProQuiz_reviewQuestion li {
+  width: 40px !important;
+  height: 40px !important;
+  line-height: 40px !important;
+  padding: 0 !important;
+  background-color: #f4f5f7 !important;
+  color: #122b46 !important;
+  border: 0 !important;
+  font-weight: 500 !important;
+  font-size: 15px;
+  border-radius: 100% !important;
+}
+
+div.wpProQuiz_response {
+  background-color: transparent !important;
+  border: none !important;
+  width: 100% !important;
+  padding: 0px !important;
+}
+
+div.wpProQuiz_response div.wpProQuiz_correct,
+div.wpProQuiz_response div.wpProQuiz_incorrect {
+  background-color: #f4f5f7 !important;
+  color: #122b46 !important;
+  padding: 10px !important;
+  border-radius: 10px !important;
+  box-shadow: rgba(97, 93, 250, 0.15) 3px 3px 12px 0px !important;
+}
+
+/* * Course Intro Page */
+div.bb-course-banner-info {
+  margin: 0 auto !important;
+}
+
+@media only screen and (max-width: 600px) {
+  div.bb-course-banner-info div.bb-course-banner-inner h1.entry-title {
+    font-size: 30px;
+  }
+
+  div.bb-course-banner-info div.bb-course-banner-inner {
+    padding: 20px 0px !important;
+  }
+
+  div.bb-vw-container.bb-learndash-banner + div.bb-grid {
+    padding: 0px !important;
+  }
+
+  img.banner-img {
+    display: none;
+  }
+}
+/* ? Learndash Plugin | END */
+
+/* !! Pages */
+
+/* TODO Styling Fixes global | START */
+/* ? For Emojies without a class | START */
+div.bbp-reply-content div.bbp-voting + p > img {
+  width: 24px !important;
+  height: 24px !important;
+  margin: 0 5px;
+}
+/* ? For Emojies without a class | END */
+/* TODO Styling Fixes global | END */
+
+body.page-id-42535 div#content {
+  min-height: 100% !important;
+}
+
+body.page-id-42535 div#content div.container div#primary {
+  max-width: 100% !important;
+}
+
+/* TODO IMAT PAGE */
+/* ? IMAT INTRO SECTION BANNER | START */
+/* ? Page section background - IMAT */
+@media only screen and (min-width: 1440px) {
+  section.section--imat-background {
+    background-position: 350px !important;
+    background-size: cover !important;
+  }
+  section.section--intro-overlay > div.elementor-background-overlay {
+    background-position: -40px 0px !important;
+  }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1439px) {
+  section.section--imat-background {
+    background-position: 350px !important;
+    background-size: cover !important;
+  }
+  section.section--intro-overlay > div.elementor-background-overlay {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 967px) and (max-width: 1279px) {
+  section.section--imat-background {
+    background-position: 250px !important;
+    background-size: cover !important;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  section.section--imat-background {
+    background-position: 250px !important;
+    background-size: cover !important;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  section.section--imat-background {
+    background-position: 500px !important;
+    background-size: cover !important;
+  }
+}
+/* ? IMAT INTRO SECTION BANNER | END */
+
+/* ! CUSTOM HOME PAGE | START */
+/* TODO - Global corrections | START */
+
+header#masthead div.container.site-header-container.flex.default-header {
+  max-width: calc(100% - 20px) !important;
+  position: relative;
+  padding: 0rem 10px;
+  margin: 0 auto;
+}
+
+/* * Add spacing between menu and the content depending on the page */
+body.singular div#content div.container,
+body.activity div#content div.container,
+body.single div#content div.container {
+  margin-top: 120px !important;
+}
+
+/* Single posts */
+body.single-format-standard header + div#content div.container {
+  margin-top: 0px !important;
+}
+
+/* Single posts - entry image */
+.single .post.full-fi figure.entry-img,
+.single .post.full-fi-invert figure.entry-img {
+  padding-top: 0px !important;
+}
+
+.entry-img img {
+  position: static !important;
+  width: 100%;
+  height: 400px;
+  object-fit: cover !important;
+  top: 90px;
+}
+
+.single-attachment .post-related-posts .post-grid .first .entry-img,
+.single-post .post-related-posts .post-grid .first .entry-img {
+  padding: 0px !important;
+  height: 300px !important;
+}
+
+body.post-type-archive div#content div.container,
+body.single-sfwd-courses div#content div.container,
+body.single-sfwd-lessons div#content div.container {
+  margin-top: 90px !important;
+}
+
+body.page-login div#content div.container,
+body.page-registration div#content div.container,
+body.page-password-recovery div#content div.container {
+  margin-top: 120px !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* TODO - Transforming Layout according to the page need | START */
+div.container {
+  max-width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+body.page-id-1855 div.entry-content,
+div.privacy-policy {
+  max-width: 1140px;
+  margin: 1rem auto;
+}
+
+/* body.activity {
+  max-width: 1200px;
+  margin: 0 auto;
+} */
+
+/* ! BuddyBoss Plugin Modifications | START */
+
+/* div.container > .bb-grid {
+  margin-top: 120px !important;
+} */
+
+/* body.home div.container > .bb-grid {
+  margin-top: 85px !important;
+} */
+
+body.page-template-exams div.container .bb-grid {
+  margin-top: 92px !important;
+}
+
+body.page-template-page-layout div.container > .bb-grid {
+  margin-top: 0px !important;
+}
+
+body.page-id-42546 div.container > .bb-grid,
+body.page-id-42535 div.container > .bb-grid {
+  margin-top: 60px !important;
+}
+
+@media only screen and (max-width: 2560px) {
+  div.container > .bb-grid > div.content-area.bs-bp-container {
+    margin-top: 0px !important;
+  }
+}
+/* ? Border radius for all elements */
+div.bb-sticky-sidebar aside#bp_core_members_widget-2,
+aside#bbp_search_widget-4,
+aside#bbp_search_widget-3,
+aside#bbp_search_widget-1,
+aside#bbp_search_widget-2,
+aside#bbp_search_widget-5,
+aside#bbp_forums_widget-3,
+aside#bbp_forums_widget-2,
+aside#bbp_forums_widget-1,
+aside#bbp_forums_widget-4,
+aside#cmtt_randomterms_widget-2,
+aside#lduserstatus-3,
+aside#bbp_topics_widget-2,
+aside#bbp_topics_widget-3,
+aside#bbp_topics_widget-4,
+aside#bbp_topics_widget-5,
+aside.bp-feedback,
+.bb-about-instructor > .bb-grid,
+.bb-single-course-sidebar .widget,
+#bbpress-forums .activity-list.bp-list .activity-item,
+#buddypress .activity-list.bp-list .activity-item,
+#buddypress .activity-lists.bp-list .activity-item,
+.learndash-wrapper .ld-table-list .ld-table-list-items a.ld-table-list-item-preview,
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_time_limit,
+.wpProQuiz_content .wpProQuiz_questionList.ui-sortable li.wpProQuiz_questionListItem,
+.wpProQuiz_content .wpProQuiz_questionList[data-type="multiple"] li.wpProQuiz_questionListItem,
+.wpProQuiz_content .wpProQuiz_questionList[data-type="single"] li.wpProQuiz_questionListItem,
+.wpProQuiz_content .wpProQuiz_questionList[data-type="sort_answer"] li.wpProQuiz_questionListItem,
+.learndash-wrapper .ld-status,
+.learndash_next_prev_link a.next-link,
+.learndash_next_prev_link span.next-link,
+.learndash_next_prev_link a.prev-link,
+.learndash_next_prev_link span.prev-link,
+div.bbp-pagination-links,
+div.ab-sub-wrapper.wrapper,
+div.ab-sub-wrapper.wrapper > ul,
+div.sub-menu,
+div.bp-profile-wrapper,
+ul.bb-course-list li.bb-course-item-wrap div.bb-cover-list-item,
+div.grid-filters,
+div.select-wrap,
+ul.item-list li div.list-wrap,
+aside.bbpress .bp-feedback,
+div.bb-media-container,
+a#bp-add-video,
+form#whats-new-form,
+div.tiles ul.glossaryList li,
+form.bbp-voting-sort select,
+nav#object-nav,
+div#cover-image-container,
+aside.widget.widget_bp_profile_completion_widget,
+p.bp-feedback.info,
+div.messages-wrapper,
+section.notification-dropdown,
+ul.bs-item-list,
+ul.bs-item-list li.bs-item-wrap,
+ul.bs-item-list.list-view li div.bs-item-wrap,
+ul.bs-item-list.list-view li.depth-1 {
+  border-radius: 10px !important;
+  box-shadow: var(--box-background) !important;
+  border: none !important;
+}
+
+/* * Forums spacing from intro banner @fix */
+#bbpress-forums {
+  margin-top: 2rem !important;
+}
+
+@media only screen and (max-width: 968px) {
+  div#primary {
+    padding: 20px !important;
+    /* margin-top: 60px !important; */
+  }
+
+  body.single-sfwd-lessons div#primary,
+  body.single-sfwd-courses div#primary {
+    margin-top: 0px !important;
+  }
+
+  div#secondary,
+  div#secondary-right {
+    padding: 20px !important;
+  }
+}
+
+body {
+  background-color: var(--body-color) !important;
+}
+
+aside#bbp_search_widget-4 {
+  background-color: transparent;
+  box-shadow: none !important;
+  border: none;
+  padding: 0;
+}
+
+aside#bbp_search_widget-4 h2.widget-title {
+  display: none !important;
+}
+
+aside#bbp_search_widget-4 form#bbp-search-form div input#bbp_search {
+  background-color: var(--gray-bg) !important;
+  border: 1px solid var(--search-outline) !important;
+}
+
+aside#bbp_search_widget-4 form#bbp-search-form div input#bbp_search::placeholder {
+  color: var(--search-outline) !important;
+  font-weight: 400 !important;
+}
+
+ul.bs-item-list {
+  box-shadow: none !important;
+}
+
+/* ? Friends Tab | Profile */
+ul.item-list > li.item-entry {
+  margin-top: 0.5rem !important;
+}
+
+aside.bp-feedback,
+ul.bs-item-list.list-view li.bs-item-wrap,
+ul.bs-item-list.list-view li {
+  margin-bottom: 0.5rem !important;
+}
+
+li#activity-favorites.selected {
+  background-color: #d9e4f7 !important;
+  border-radius: 10px !important;
+  font-weight: 600 !important;
+  color: #2e5d85 !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+div.actvity-head-bar div#subnav-filters {
+  display: none;
+}
+
+div.actvity-head-bar nav.activity-type-navs {
+  border: none !important;
+}
+
+div#buddypress div.actvity-head-bar {
+  display: flex !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+}
+
+div#buddypress div.actvity-head-bar nav {
+  width: 100% !important;
+}
+
+div#buddypress div.actvity-head-bar nav ul.component-navigation.activity-nav {
+  display: flex !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+}
+
+body #buddypress:not(.round-avatars) #item-header-cover-image #item-header-avatar img.avatar {
+  border-radius: 50% !important;
+  box-shadow: rgba(97, 93, 250, 0.15) 3px 3px 12px 0px !important;
+  border: none;
+}
+
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.buddypress-wrap .activity-comments > ul {
+  border-radius: 0px 0px 10px 10px !important;
+}
+
+div.bp-dir-hori-nav nav#object-nav {
+  margin-top: 1rem;
+}
+
+/* ul.bs-item-list.list-view li:first-child div.bs-item-wrap,
+ul.bs-item-list.list-view li:first-child.bs-item-wrap,
+ul.item-list li:first-child div.list-wrap, */
+ul.bb-course-list li.bb-course-item-wrap div.bb-cover-list-item div.bb-course-cover,
+div.list-wrap div.bs-group-cover a,
+div#whats-new-avatar,
+div#header-cover-image {
+  border-radius: 10px 10px 0px 0px !important;
+}
+
+/* ul.bs-item-list.list-view li:last-child div.bs-item-wrap,
+ul.item-list li:last-child div.list-wrap, */
+div#whats-new-content,
+div#whats-new {
+  border-radius: 0px 0px 10px 10px !important;
+}
+
+/* Border Radius: left side */
+a.ln-all.ln-selected,
+nav#subnav,
+p.bp-feedback span.bp-icon,
+aside.bp-feedback span.bp-icon,
+#bbpress-forums#bbpress-forums
+  .bs-forums-items.list-view
+  .bs-dropdown-wrap
+  .bs-dropdown-wrap-inner
+  > a:first-child
+  > i {
+  border-radius: 10px 0px 0px 10px !important;
+}
+
+/* Border Radius: right side */
+div.ln-letters a.ln-last,
+#bbpress-forums#bbpress-forums
+  .bs-forums-items.list-view
+  .bs-dropdown-wrap
+  .bs-dropdown-wrap-inner
+  > a
+  > i {
+  border-radius: 0px 10px 10px 0px !important;
+}
+
+/* ? Layout breaking 768 - 1024px | Link: https://discord.com/channels/780195610154237993/865630686126538782/869834258770980944 */
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+  .directory.activity.activity-sidebar-left .site-content-grid {
+    display: flex !important;
+  }
+
+  .directory.activity.activity-sidebar-left:not(.profile-sidebar):not(.group-sidebar):not(.llms-pointer)
+    #page
+    #primary,
+  .directory.activity.activity-sidebar-left:not(.profile-sidebar):not(.group-sidebar):not(.llms-pointer)
+    #primary {
+    min-width: 500px;
+  }
+
+  div.bb-grid div#secondary-right {
+    flex: 1 1 100%;
+    max-width: 100% !important;
+    margin-top: 2rem;
+  }
+
+  ul.activity-list.item-list.bp-list {
+    margin-bottom: 2rem !important;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  body.bbp-user-page div.site-content-grid {
+    flex-flow: wrap !important;
+  }
+}
+
+body.bbp-user-page div.site-content-grid {
+  margin: 0 auto;
+  padding: 0px;
+}
+
+div.bb-grid {
+  justify-content: center !important;
+  padding-top: 60px;
+  padding: 0px !important;
+}
+
+body.topic div.bb-grid.site-content-grid {
+  margin-top: 3rem;
+}
+
+body.topic div.bb-grid {
+  padding-top: 20px;
+}
+
+div#bp-nouveau-activity-form form.activity-form div#whats-new-avatar {
+  background-color: var(--gray-bg) !important;
+}
+
+div#bp-nouveau-activity-form form.activity-form div#whats-new-avatar a.activity-post-avatar {
+  color: var(--dark-text);
+  font-size: 18px;
+}
+
+ul.activity-list li.bbpress div.activity-content div.bb-content-inr-wrap {
+  background-color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  div.bb-grid {
+    padding: 20px 10px 0px 10px;
+  }
+
+  /* ? News Feed | start */
+  div#buddypress div.actvity-head-bar nav ul.component-navigation.activity-nav {
+    justify-content: flex-start !important;
+  }
+
+  body.forum div#primary main#main {
+    margin-top: 6rem !important;
+  }
+}
+
+@media only screen and (max-width: 2560px) {
+  div.bb-grid.site-content-grid {
+    padding: 0px 10px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  div.bb-grid.site-content-grid {
+    margin-top: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 968px) {
+  div.bb-grid.site-content-grid {
+    padding: 0px;
+  }
+}
+
+/* ? Single Activity Layout | start */
+@media only screen and (min-width: 800px) {
+  body.my-activity div.bb-grid.site-content-grid {
+    flex-flow: wrap !important;
+    flex-wrap: wrap !important;
+  }
+
+  /* body.my-activity div#secondary {
+    padding-top: 3.7rem !important;
+  } */
+}
+
+/* ? Single Activity Layout | end */
+/* ? News Feed  | end */
+
+/* ! To be categorized */
+header.entry-header {
+  display: none;
+}
+
+/* ? BuddyPress| START */
+
+/* ? Friends Tab */
+ul#friend-list li {
+  margin: 1rem 0 !important;
+}
+
+ul#friend-list li > div {
+  border-radius: 10px !important;
+  box-shadow: rgba(97, 93, 250, 0.15) 3px 3px 12px 0px !important;
+}
+
+/* ? Messages / Inbox */
+
+div.bp-message-content-wrap p {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+div.bp-message-content-wrap p img {
+  margin-top: 0.5rem;
+  border-radius: 10px;
+}
+
+body.bbp-user-page.single.singular.bbpress.xprofile.bp-user #page #primary .entry-header {
+  margin-top: 0px !important;
+  padding: 10px;
+}
+
+body .widget-area:not(.widget-area-secondary) {
+  padding-top: 35px;
+}
+
+body.page:not(.home) #buddypress .actvity-head-bar,
+body.page:not(.home) #buddypress .actvity-head-bar nav,
+body.page:not(.home) .actvity-head-bar .bp-subnavs ul {
+  flex-wrap: wrap;
+  justify-content: flex-start !important;
+}
+
+/* ? BuddyPress| END */
+
+a.bb-cover-wrap {
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+@media only screen and (max-width: 768px) {
+  body.activity #primary,
+  body.forum-archive #primary {
+    padding: 30px 10px 0px 10px;
+  }
+}
+
+/* ? BuddyPress Forums | Start */
+span.topic-author a {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+  padding: 5px;
+  border-radius: 10px;
+  width: 75%;
+}
+
+span.topic-author a span:first-child img {
+  width: 20px !important;
+  height: 20px !important;
+  object-fit: cover;
+  object-position: center;
+
+  margin-right: 0.25rem;
+  box-shadow: rgba(97, 93, 250, 0.15) 3px 3px 12px 0px !important;
+}
+/* ? BuddyPress Forums | End */
+
+/* ? News Page */
+div.flex.actvity-head-bar nav ul li a {
+  padding: 5px !important;
+  border-bottom-style: none !important;
+  font-weight: 600 !important;
+  color: #2e5d85 !important;
+}
+
+div.flex.actvity-head-bar nav ul li {
+  padding: 5px !important;
+}
+
+body.page:not(.home) #primary {
+  padding: 0px;
+}
+
+/* ! News Page | Activity */
+div.bb-grid div.content-area {
+  max-width: 1140px !important;
+  padding: 0 20px;
+}
+
+body.activity .has-sidebar:not(.profile-sidebar):not(.group-sidebar):not(.llms-pointer) #primary,
+body.buddypress.has-sidebar:not(.profile-sidebar):not(.group-sidebar):not(.llms-pointer)
+  #page
+  #primary {
+  max-width: 900px !important;
+}
+
+/* ? Layout fix for https://entermedschool.com/activity/ */
+/* body.buddypress #page #primary .entry-content,
+body.buddypress #page #primary .entry-header {
+  margin-top: 1.8rem !important;
+} */
+
+/* ? Layout fix for https://entermedschool.com/members/stax/activity/ */
+body.bbpress.activity.my-activity #page #primary .entry-content,
+body.buddypress #page #primary .entry-header {
+  margin-top: 3.8rem !important;
+}
+
+/* ? Layout fix for https://entermedschool.com/members/stax/activity/ - Activity not found */
+body.bbpress div.activity.single-user {
+  margin-bottom: 1.5rem;
+}
+
+/* ? Tablet up to 1440px | START */
+/* @media only screen and (max-width: 1440px) {
+  body.page:not(.home) #primary {
+    padding: 0px 10px 0px 10px;
+  }
+} */
+/* ? Tablet up to 1440px | END */
+
+/* ! Search Page */
+/* ? Tablet up to 768px | START */
+@media only screen and (max-width: 768px) {
+  div.bp-search-page.buddypress-wrap {
+    margin-top: 5rem;
+  }
+}
+/* ? Tablet up to 768px | END */
+/* ? Tablet from 800px | START */
+@media only screen and (min-width: 800px) {
+  div.bp-search-page.buddypress-wrap {
+    margin-top: 3rem;
+  }
+}
+/* ? Tablet from 800px | END */
+
+/* ! Forum Page */
+body.forum div#primary main#main {
+  margin-top: 3rem;
+}
+
+div.entry-content div#bbpress-forums div.bb-grid {
+  padding: 0px !important;
+}
+
+/* ! Courses Page */
+div.bb-courses-header {
+  margin: 2rem 0;
+}
+
+/* ! Profile Page */
+/* * Overriding default BuddyBoss styles */
+div.bb-profile-grid.bb-grid {
+  margin: 0px;
+}
+
+div.bs-topic-sidebar-inner.is_stuck {
+  top: 10px !important;
+}
+
+div#cover-image-container {
+  margin-top: 0px !important;
+}
+
+body.buddypress #page #primary .entry-content,
+body.buddypress #page #primary .entry-header {
+  padding: 0px 10px;
+  /* margin-top: 200px!important; */
+}
+
+@media only screen and (max-width: 1024px) {
+  /* body.buddypress #page #primary article.bp_members div.entry-content,
+  body.my-profile div.site-content div.container div.bb-grid div#secondary {
+    margin-top: 150px !important;
+  } */
+}
+@media only screen and (max-width: 1599px) {
+  body.my-profile div.site-content div.container div.bb-grid div#secondary {
+    padding: 0px 10px !important;
+  }
+
+  div.bb-profile-grid.bb-grid {
+    padding: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  body.my-profile div.site-content div.container div.bb-grid div#secondary {
+    padding: 0px 30px !important;
+    margin-top: 0px !important;
+  }
+}
+
+/* ? Tablet up to 768px | START */
+@media only screen and (max-width: 1440px) {
+  div.bb-profile-grid.bb-grid div#item-body {
+    padding: 0px;
+  }
+
+  body.bbp-user-page main.site-main {
+    margin-top: 0px;
+    padding: 0px 10px;
+  }
+
+  body.page:not(.home).bbp-user-page #primary {
+    margin-top: 0px !important;
+  }
+}
+/* ? Tablet up to 768px | END */
+
+body.bbp-user-page main.site-main {
+  /* margin-top: 60px; */
+  padding: 0px 10px;
+}
+
+body.forum-archive #primary {
+  /* margin-top: 30px; */
+}
+
+/* ! BuddyBoss Plugin Modifications | END */
+
+/* ! LearnDash Side Bar | START */
+@media only screen and (min-width: 968px) {
+  body.single-sfwd-lessons div.bb-grid div.content-area,
+  body.single-sfwd-quiz div.bb-grid div.content-area,
+  body.single-sfwd-topic div.bb-grid div.content-area {
+    max-width: 100% !important;
+  }
+
+  body.single-sfwd-lessons .lms-topic-sidebar-wrapper .lms-topic-sidebar-data,
+  body.single-sfwd-topic .lms-topic-sidebar-wrapper .lms-topic-sidebar-data,
+  body.single-sfwd-quiz .lms-topic-sidebar-wrapper .lms-topic-sidebar-data {
+    padding: 15px 0;
+    font-size: 15px;
+    width: 370px;
+    overflow-y: auto;
+    height: calc(100vh - 10px);
+    position: static !important;
+  }
+
+  /* body.single-sfwd-lessons div.lms-topic-sidebar-wrapper,
+  body.single-sfwd-topic div.lms-topic-sidebar-wrapper,
+  body.single-sfwd-quiz div.lms-topic-sidebar-wrapper {
+    margin-top: 3rem;
+  } */
+
+  body.single-sfwd-lessons div#learndash-page-content,
+  body.single-sfwd-topic div#learndash-page-content,
+  body.single-sfwd-quiz div#learndash-page-content {
+    margin-top: 3rem;
+    padding-top: 60px;
+  }
+
+  body.single-sfwd-lessons div.bb-grid,
+  body.single-sfwd-topic div.bb-grid,
+  body.single-sfwd-quiz div.bb-grid {
+    padding-top: 0px;
+  }
+  /* LearnDash Side Bar | END */
+
+  /* ? All courses page | START */
+  body.post-type-archive-sfwd-courses div.bb-grid {
+    margin-top: 3rem;
+  }
+  /* ? All courses page | END */
+}
+
+body.single-post .single-attachment:not(.has-sidebar) .content-area,
+.single-attachment:not(.has-sidebar) .site-content-grid,
+.single-post:not(.has-sidebar) .content-area,
+.single-post:not(.has-sidebar) .site-content-grid {
+  max-width: 100% !important;
+  flex-direction: column;
+}
+
+body.single-post div.bb-grid div.content-area main#main {
+  max-width: 1140px !important;
+  margin: 0 auto !important;
+}
+
+body.forum-archive div.bb-grid div.content-area {
+  max-width: 900px !important;
+}
+
+body.single-post .bb-footer,
+.site-content,
+.site-header {
+  padding: 0px !important;
+}
+
+/* header#masthead div.container.site-header-container.flex.default-header {
+  padding: 0 10px !important;
+} */
+
+/* body.page-id-27295 .bb-grid,
+body.page-id-33276 .bb-grid,
+body.page-id-33287 .bb-grid,
+body.page-id-33577 .bb-grid,
+body.page-id-33331 .bb-grid {
+  flex-direction: column;
+  background: linear-gradient(180deg, #fbf8fe 60%, #fbf8fe 100%);
+} */
+
+/* ? Blog header going beneath the menu */
+body.page-id-33006 div.bb-grid.site-content-grid,
+body.page-id-32555 div.bb-grid.site-content-grid {
+  margin-top: 3rem;
+}
+
+/* ? Show blog post title */
+.single-post.full-fi-invert .content-area header.entry-header {
+  display: block;
+}
+
+/* ? Navigation bar on custom pages position fix */
+#site-logo .site-title .bb-logo img,
+#site-logo .site-title img.bb-logo,
+.buddypanel .site-title img {
+  width: 180px !important;
+  max-height: 75px !important;
+}
+
+ul.primary-menu a /* navigation menu links */,
+header.site-header div.sub-menu a /* Avatar name dropdown text size */,
+a.user-link /* Avatar name font size */ {
+  font-size: 15px !important;
+}
+
+.site-header .sub-menu {
+  min-width: 200px !important;
+}
+
+/* .site-header .sub-menu .menu-item-has-children:not(.hideshow)::after {
+  top: 7px!important;
+} */
+
+body.page-id-27295 ul#primary-menu,
+body.page-id-33276 ul#primary-menu,
+body.page-id-33287 ul#primary-menu,
+body.page-id-33577 ul#primary-menu,
+body.page-id-33331 ul#primary-menu,
+body.page-id-33006 ul#primary-menu,
+body.page-id-32555 ul#primary-menu {
+  padding: 0px;
+}
+
+body.page-id-27295 div#content,
+body.page-id-33276 div#content,
+body.page-id-33287 div#content {
+  padding: 0px;
+}
+/* TODO - Transforming Layout according to the page need | END */
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+}
+
+.accordion-item:first-of-type .accordion-button {
+  border-radius: 0px !important;
+}
+
+/* ? Successful Search Results | Forum Page */
+div#bbpress-forums ul#bbp-search-results {
+  margin-top: 3rem;
+}
+
+/* TODO - Global corrections | END */
+
+/* ? INTRO BANNER | START */
+/* ! Home page | start */
+body.page-id-27295 {
+  background-color: #f9fafb;
+}
+/* ! Home page | end */
+
+section.container-fluid {
+  background: url("https://res.cloudinary.com/dnqicdh71/image/upload/v1637328505/EnterMedSchool/intro-section_home-banner_test_2.jpg");
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100% !important;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1921px) {
+  section.container-fluid {
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  section.container-fluid .custom--block {
+    max-width: 100% !important;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  section.container-fluid .custom--block h1 {
+    line-height: 80px !important;
+    max-width: 800px !important;
+  }
+
+  section.container-fluid .custom--block p {
+    max-width: 800px !important;
+  }
+}
+
+@media (min-width: 968px) and (max-width: 1600px) {
+  section.container-fluid {
+    background-position: 64%;
+  }
+
+  section.container-fluid .custom--block {
+    max-width: 800px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  section.container-fluid {
+    background-image: none !important;
+    background-color: var(--promo-text);
+  }
+}
+
+section.container-fluid h1 {
+  color: var(--white-bg);
+}
+
+section.container-fluid .custom--block p {
+  width: 100%;
+  list-style: 44px;
+  font-weight: bold;
+  color: var(--white-bg);
+}
+
+header#masthead h2 a img {
+  object-position: left;
+}
+
+@media only screen and (min-width: 968px) {
+  section.container-fluid {
+    min-height: 800px;
+  }
+
+  body.page-template-exams section.container-fluid,
+  body.page-tempalte-tutoring section.container-fluid {
+    min-height: 50vh !important;
+  }
+
+  section.container-fluid.tutoring {
+    min-height: 50vh !important;
+    margin-top: 92px !important;
+    min-width: 100%;
+  }
+}
+
+@media (min-width: 968px) and (max-width: 1400px) {
+  body header.site-header div.site-header-container {
+    padding: 0 2rem !important;
+    max-width: 100%;
+  }
+}
+
+body.page-id-33276 section.container-fluid div.intro--section,
+body.page-id-33287 section.container-fluid div.intro--section {
+  height: 100vh;
+}
+
+body .site-header {
+  background-color: var(--white-bg);
+  backdrop-filter: none !important;
+}
+
+@media only screen and (min-width: 1401px) {
+  body header.site-header div.site-header-container {
+    padding: 0 6rem !important;
+    backdrop-filter: blur(5px);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  section.container-fluid div.container_custom {
+    padding: 20px !important;
+  }
+  section.container-fluid h1 {
+    width: 100% !important;
+    margin-top: 3rem;
+  }
+
+  section.container-fluid p {
+    width: 100% !important;
+  }
+
+  div.container_custom div.custom--block div.button--group {
+    justify-content: center;
+    width: 100% !important;
+  }
+}
+
+.container_custom {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 5rem 20px !important;
+  width: 100%;
+}
+
+/* div.container_custom div.custom--block {text-align: center;} */
+
+.container_custom .custom--block p {
+  font-size: 25px;
+}
+
+.container_custom .custom--block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+div.container_custom div.custom--block div.button--group {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.container_custom div.custom--block div.button--group a {
+  color: white;
+  font-size: 16px;
+}
+
+div.container_custom div.custom--block div.button--group div.learndash-course-inprogress-message p,
+div.container_custom div.custom--block div.button--group div.learndash-course-notstarted-message p {
+  width: 100%;
+  margin: 0px;
+}
+
+div.container_custom
+  div.custom--block
+  div.button--group
+  div.learndash-course-inprogress-message
+  p
+  a,
+div.container_custom
+  div.custom--block
+  div.button--group
+  div.learndash-course-notstarted-message
+  p
+  a {
+  margin: 0px;
+}
+
+div.learndash-course-inprogress-message {
+  margin: 1rem;
+}
+
+div.learndash-course-inprogress-message p a {
+  padding: 20px !important;
+  max-width: calc(100% - 40px) !important;
+}
+
+div.container_custom div.custom--block div.button--group button.register-button {
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  min-height: 67px;
+}
+
+div.container_custom div.custom--block div.button--group a {
+  border-radius: 10px;
+  padding: 20px;
+  margin: 1rem;
+  text-align: center;
+}
+
+div.container_custom div.custom--block div.button--group p > a {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* div.container_custom div.custom--block div.ff_form_modal {
+  width: 100%;
+} */
+
+div.container_custom div.custom--block div.button--group button {
+  background-color: var(--promo-bg);
+  border: var(--promo-bg);
+  color: var(--solid-black);
+}
+
+div.container_custom div.custom--block div.button--group a {
+  background-color: var(--white-bg);
+  color: var(--solid-black);
+  transition: all 0.5s ease-in-out;
+}
+
+div.container_custom div.custom--block div.button--group a:hover {
+  background-color: var(--promo-bg);
+  color: var(--solid-black);
+}
+
+/* ? TABLET up to 1140px | START */
+@media only screen and (max-width: 1140px) {
+  div.tablet-hide {
+    display: none !important;
+  }
+
+  body.page-id-33276 section.container-fluid div.intro--section,
+  body.page-id-33287 section.container-fluid div.intro--section {
+    height: 80vh;
+  }
+
+  section.container-fluid {
+    background-size: cover;
+    background-position: center;
+  }
+}
+/* ? TABLET up to 1140px | END */
+
+/* ? Tablet up to 768px | START */
+@media only screen and (max-width: 800px) {
+  div.container_custom {
+    padding: 2rem 2rem 0px 2rem !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.container_custom div.custom--block div.button--group {
+    justify-content: space-evenly;
+  }
+
+  section.container-fluid h1 {
+    font-size: 60px;
+    line-height: 60px;
+    max-width: 72%;
+  }
+
+  div.container_custom div.custom--block div.button--group button {
+    font-size: 20px;
+    font-weight: bold !important;
+  }
+}
+
+/* ? Tablet up to 768px | END */
+
+/* ? Mobile up to 600px | START */
+@media only screen and (max-width: 600px) {
+  div.mobile-hide {
+    display: none !important;
+  }
+
+  div.container_custom {
+    padding: 2rem 2rem 0px 2rem !important;
+  }
+
+  div.container_custom div.custom--block div.button--group {
+    margin-top: 0px;
+  }
+
+  div.container_custom div.custom--block div.button--group button {
+    margin: 2rem 0px;
+    width: 100%;
+  }
+
+  section.container-fluid h1 {
+    max-width: 100%;
+    font-size: 40px !important;
+    line-height: 48px;
+  }
+
+  div.container_custom div.custom--block div.button--group {
+    flex-direction: column !important;
+  }
+
+  div.container_custom div.custom--block div.ff_form_modal,
+  div.container_custom div.custom--block a {
+    width: 100%;
+  }
+}
+
+/* ? INTRO BANNER | END */
+
+/* ? Donor Section | START */
+div.donate--section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 0 20px !important;
+}
+
+div.donate--section div.donate--section-text,
+div.donate--section div.donate--section-image {
+  flex: 1 1 50%;
+}
+
+div.donate--section div.donate--section-text > h4 {
+  text-transform: uppercase;
+  color: #6ec1e4;
+  font-weight: bold;
+}
+
+div.donate--section div.donate--section-text > h3 {
+  font-weight: bold;
+}
+
+div.donate--section div.donate--section-text > p {
+  width: 90%;
+  margin-bottom: 2rem;
+}
+
+div.donate--section div.donate--section-text > a {
+  padding: 10px 10%;
+  background-color: #ff424d;
+  border-radius: 50px;
+  color: white;
+}
+/* ? Tablet up to 968px | START */
+@media only screen and (max-width: 968px) {
+  div.donate--section {
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  div.donate--section div.donate--section-image {
+    width: 80%;
+    margin-top: 5rem;
+  }
+
+  div.donate--section div.donate--section-text,
+  div.donate--section div.donate--section-image {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* ? Tablet up to 968px | START */
+/* ? Mobile up to 600px | START */
+@media only screen and (max-width: 600px) {
+  div.donate--section div.donate--section-text > p {
+    width: 100%;
+    text-align: center;
+  }
+
+  div.donate--section div.donate--section-text > h3 {
+    font-size: 20px;
+    margin: 1rem 0;
+  }
+
+  div.donate--section div.donate--section-text {
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* ? Mobile up to 600px | END */
+/* ? Donor Section | END */
+
+/* ! Representatives Page - 33577 | START */
+body.page-id-33577 div.team--section-layout div.team--section-layout_block {
+  flex: 0 0 46.1%;
+  height: 100%;
+}
+/* ! Representatives Page - 33577 | END */
+
+/* ! Scroll Indicator | start */
+
+body.activity div.header--stax,
+body.my-activity div.header--stax,
+body.post-type-archive-forum div.header--stax,
+body.learndash-cpt div.header--stax {
+  display: none;
+}
+
+.header--stax {
+  position: absolute;
+  top: 99%;
+  left: 0px;
+  z-index: 1;
+  width: 100%;
+  background-color: var(--promo-bg);
+}
+
+body.admin-bar .header--stax {
+  top: 99%;
+}
+
+.header--stax h2 {
+  text-align: center;
+}
+
+.progress-container--stax {
+  width: 100%;
+  height: 3px;
+  background: var(--promo-bg);
+}
+
+.progress-bar--stax {
+  height: 3px;
+  background: whitesmoke;
+  width: 0%;
+}
+
+.content--stax {
+  padding: 100px 0;
+  margin: 50px auto 0 auto;
+  width: 80%;
+}
+
+/* @media only screen and (max-width: 768px) {
+  .header--stax {
+    top: 122px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .header--stax {
+    top: 106px;
+  }
+} */
+/* ! Scroll Indicator | end */
+
+/* ! Testing Features | start */
+
+.promo {
+  z-index: 10;
+  width: 100%;
+  height: 30px;
+  padding: 0px 20px;
+  background: linear-gradient(-45deg, #f44369, #e73c7e, #3e3b92, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientpromo 30s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 250;
+}
+
+@keyframes gradientpromo {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.promo {
+  /* color: var(--promo-text) !important; */
+  color: var(--white-bg) !important;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Promo banner */
+header#masthead {
+  top: 30px !important;
+}
+
+/* Promo banner */
+body.admin-bar header#masthead {
+  top: 62px !important;
+}
+
+div.bb-mobile-header-wrapper {
+  position: relative !important;
+}
+
+/* Promo banner */
+@media only screen and (max-width: 768px) {
+  .promo {
+    height: 50px;
+    padding: 0px;
+  }
+
+  #content .container {
+    margin-top: 95px;
+  }
+
+  header#masthead {
+    top: 50px !important;
+  }
+
+  body.admin-bar header#masthead {
+    top: 96px !important;
+  }
+}
+
+/* ! Gallery Slider
+div.wpsisac-slider-short-content p {
+  margin: 0.5rem 0px;
+}
+
+div.wpsisac-slider-short-content p:first-child {
+  margin: 1rem 0px;
+}
+
+div.wpsisac-slider-short-content p a {
+  background-color: var(--white-bg);
+  padding: 5px 15px;
+  border-radius: 15px;
+  color: var(--solid-black);
+  font-weight: bold;
+}
+
+div.wpsisac-content-left {
+  padding: 0px !important;
+  text-align: center !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wpsisac-slick-slider.design-4
+  .wpsisac-image-slide
+  .wpsisac-slide-wrap
+  .wpsisac-slider-short-content
+  p {
+  text-align: center !important;
+}
+
+.wp-medium-12 {
+  padding: 30px 0px;
+}
+
+button#slick-slide-control00,
+button#slick-slide-control01 {
+  border: none !important;
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.wpsisac-slick-slider .slick-dots li.slick-active button,
+.dot.active,
+.dot:hover {
+  background: salmon !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .wp-medium-12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding: 40px 0px;
+  }
+} */
+
+body.page-id-42664 div.site-content {
+  margin-top: 120px;
+}
+
+/* ! Testing Features | end */
+
+/* ! Tutoring Page | start */

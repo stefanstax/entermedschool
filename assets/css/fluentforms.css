@@ -1,0 +1,468 @@
+/* ? Fluent Forms Pro | start */
+
+/* * Modal Popup */
+div.lity-container div.lity-content > div {
+  background-color: var(--newsfeed-tabs-bg) !important;
+  padding: 0px;
+}
+
+/* TODO| Recovery Page */
+fieldset {
+  border: none !important;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: var(--box-shadow);
+}
+
+fieldset legend {
+  display: none !important;
+}
+
+body.page-password-recovery div.wp-block-image img {
+  max-width: 150px;
+}
+
+fieldset p input {
+  padding: 20px 50px;
+  height: 100%;
+  border-radius: 15px;
+  border: none;
+  margin: 1rem 0px;
+  background-color: whitesmoke;
+  cursor: pointer;
+  background-image: url("https://res.cloudinary.com/dnqicdh71/image/upload/v1634748478/EnterMedSchool/inbox.png");
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: 2% 50%;
+  box-shadow: var(--box-shadow);
+}
+
+fieldset button {
+  background-color: #409eff !important;
+  padding: 5px;
+  border-radius: 5px !important;
+  width: 35%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* * Page layout for Register/Login/Recovery */
+body.page-registration div.entry-content,
+body.page-login div.entry-content,
+body.page-password-recovery div.entry-content {
+  max-width: 500px;
+  margin: 0rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* * Form width */
+div.fluentform.fluentform_wrapper_7,
+div.fluentform.fluentform_wrapper_14,
+div.fluentform.fluentform_wrapper_13 {
+  width: 100%;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.fluentform {
+  padding: 20px;
+}
+
+/* Form Labels */
+.fluentform .ff-el-input--label {
+  margin-bottom: 1rem !important;
+}
+
+/* * Reveal Password */
+div.ff-el-group.email-stax + div.ff-t-container {
+  position: relative;
+}
+
+div.ff-el-group.reveal-stax {
+  margin-bottom: 0px !important;
+  position: absolute;
+  top: 47px;
+  height: 64px !important;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  right: 20px;
+  cursor: grabbing;
+}
+
+div.ff-el-group.password-stax {
+  width: 100%;
+}
+
+div.ff-el-group.reveal-stax p {
+  margin: 0px !important;
+  height: 100%;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.ff-el-group.reveal-stax p svg {
+  width: 24px;
+  height: 24px;
+  transition: all 0.5s ease-in-out;
+}
+
+div.ff-el-group.reveal-stax p svg.active {
+  fill: #198754;
+  transform: rotate(365deg);
+}
+
+/* * Inputs Register - Login  */
+
+div.fluentform.fluentform_wrapper_7 .ff-btn-submit,
+div.fluentform.fluentform_wrapper_14 .ff-btn-submit,
+div.fluentform.fluentform_wrapper_13 .ff-btn-submit {
+  background-color: #409eff;
+  padding: 8px;
+  width: 40%;
+  border-radius: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+div#fluentform_7_success {
+  border-radius: 15px;
+  border: none !important;
+  background-color: white;
+}
+
+form#fluentform_7 .ff-el-form-check label.ff-el-form-check-label {
+  display: block !important;
+}
+
+div.ff-column-container.ff_columns_total_4 {
+  display: flex;
+  margin: 0.5rem 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  div.ff-column-container.ff_columns_total_4 {
+    flex-direction: column;
+  }
+}
+
+div.ff-t-cell {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+div.ff-t-cell.ff-t-column-2 p {
+  padding: 1.5px 20px;
+  border-radius: 15px;
+  box-shadow: var(--box-shadow);
+  background-color: white;
+  margin: 0px !important;
+}
+
+div.ff-el-input--content input,
+div.ff-el-input--content div.choices,
+div.ff-el-group.college--helper-stax div.ff-el-input--content select,
+div.ff-el-group.has-conditions div.ff-el-input--content select,
+div.ff-el-input--content textarea {
+  padding: 0px 50px !important;
+  border: none !important;
+  background-color: transparent !important;
+  cursor: pointer;
+  background-size: 24px !important;
+  background-repeat: no-repeat !important;
+  background-position: 2% 50%;
+}
+
+div.ff-el-group div.ff-el-input--content textarea {
+  min-height: 80px !important;
+  overflow-y: auto;
+}
+
+div.choices__inner,
+.frm-fluent-form .choices[data-type*="select-one"] .choices__input {
+  border: none !important;
+}
+
+.frm-fluent-form .choices__inner {
+  background-color: transparent !important;
+}
+
+div.ff-el-group:not(.rememberme-stax) div.ff-el-input--content,
+div.ff-el-group div.ff-el-input--content div.choices,
+div.ff-el-group div.ff-el-input--content textarea {
+  box-shadow: var(--body-shadow) !important;
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+}
+
+div.ff-el-group.radio--container div.ff-el-input--content {
+  background-color: transparent !important;
+}
+
+body.page-template-exams div.ff-el-group div.ff-el-input--content {
+  background-color: whitesmoke !important;
+}
+
+div.ff-el-group.excluded div.ff-el-input--content {
+  background-image: none !important;
+  background-color: transparent !important;
+}
+
+/* * Error handling */
+div.error.text-danger {
+  position: absolute;
+  top: 100%;
+  font-weight: bold;
+}
+
+div.ff-errors-in-stack {
+  display: flex;
+  flex-direction: column;
+}
+
+div.ff-errors-in-stack div.error.text-danger {
+  position: static !important;
+}
+
+/* * Email Group */
+div.ff-el-group.email-stax div.ff-el-input--content input {
+  background-image: url("https://res.cloudinary.com/dnqicdh71/image/upload/v1648468356/EnterMedSchool/form-icons/email_icon.png");
+}
+
+/*https://res.cloudinary.com/dnqicdh71/image/upload/v1634748478/EnterMedSchool/inbox.png*/
+/* * Password Group */
+div.ff-el-group.password-stax div.ff-el-input--content input {
+  background-image: url("https://res.cloudinary.com/dnqicdh71/image/upload/v1648468357/EnterMedSchool/form-icons/password_icon.png");
+}
+
+/* * First Last name & Username group */
+div.ff-el-group.first--name-stax div.ff-el-input--content input,
+div.ff-el-group.last--name-stax div.ff-el-input--content input,
+div.ff-el-group.username--stax div.ff-el-input--content input {
+  background-image: url("https://res.cloudinary.com/dnqicdh71/image/upload/v1648468356/EnterMedSchool/form-icons/first-name_icon.png");
+}
+
+/* * Bug Title group */
+div.ff-el-group.bug-title div.ff-el-input--content input {
+  background-image: url("https://res.cloudinary.com/dnqicdh71/image/upload/v1633620895/EnterMedSchool/but-title-icon.png");
+}
+
+/* * Country picker group */
+div.ff-el-group.country--picker-stax div.ff-el-input--content div.choices {
+  background-image: url("https://res.cloudinary.com/dnqicdh71/image/upload/v1648468356/EnterMedSchool/form-icons/country_icon.png");
+}
+
+div.ff-el-group div.ff-el-input--content div.choices div.choices__list input {
+  background-image: none !important;
+  border-radius: 5px !important;
+  border: none !important;
+  padding: 0px !important;
+}
+
+div.ff-el-group.country--picker-stax div.ff-el-input--content input {
+  border: none !important;
+  padding: 10px !important;
+  background-image: none !important;
+}
+
+div.ff-el-group.college--helper-stax div.ff-el-input--content select,
+div.ff-el-group.college--answer-stax div.ff-el-input--content input,
+div.ff-el-group.has-conditions div.ff-el-input--content input,
+div.ff-el-group div.ff-el-input--content textarea {
+  background-image: url("https://res.cloudinary.com/dnqicdh71/image/upload/v1648468356/EnterMedSchool/form-icons/university_icon.png");
+}
+
+div.ff-el-group.has-conditions.number--validator-stax
+  div.ff-el-input--content
+  input {
+  background-image: url("https://res.cloudinary.com/dnqicdh71/image/upload/v1634749030/EnterMedSchool/calculator.png");
+}
+
+div.ff-el-group.cv_upload div.ff-el-input--content select {
+  background-image: url("https://res.cloudinary.com/dnqicdh71/image/upload/v1634210951/upload_icon.png");
+}
+
+@media only screen and (max-width: 600px) {
+  div.ff-el-group.cv_upload div.ff-el-input--content select,
+  div.ff-el-group.has-conditions.number--validator-stax
+    div.ff-el-input--content,
+  div.ff-el-group.college--helper-stax div.ff-el-input--content select,
+  div.ff-el-group.college--answer-stax div.ff-el-input--content,
+  div.ff-el-group.has-conditions div.ff-el-input--content select,
+  div.ff-el-group.country--picker-stax div.ff-el-input--content,
+  div.ff-el-group.country--picker-stax div.ff-el-input--content,
+  div.ff-el-group div.ff-el-input--content div.choices,
+  div.ff-el-group.bug-title div.ff-el-input--content,
+  div.ff-el-input--content {
+    background-position: 4% 50% !important;
+  }
+
+  div.ff-el-group.rememberme-stax,
+  div.ff-el-group.recovery-stax {
+    width: 100%;
+  }
+}
+
+.fluentform .ff-el-form-check-label .ff-el-form-check-input {
+  height: 30px;
+}
+
+.ff-el-help-message {
+  text-align: center;
+  /* position: absolute; */
+  /* top: -20px; */
+  font-size: 12px !important;
+  text-align: center;
+  width: 100%;
+  background-color: var(--promo-bg);
+  border-radius: 15px 15px 0px 0px;
+  color: #171717 !important;
+  font-weight: bold;
+}
+
+.ffc_inline_form.ffc_conv_wrapper .ff_conv_app .vff-footer {
+  max-width: 720px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  position: static !important;
+}
+
+div.ffc_q_header h4 {
+  text-align: left;
+  font-size: 30px !important;
+  font-weight: bold !important;
+}
+
+div.f-sub span {
+  text-align: left;
+}
+
+div.ff_custom_button.f-enter {
+  text-align: left;
+}
+
+@media only screen and (min-width: 801px) {
+  .frm-fluent-form .ff-t-cell {
+    width: fit-content !important;
+  }
+}
+@media only screen and (max-width: 800px) {
+  div.fluentform.fluentform_wrapper_7 .ff-btn-submit,
+  div.fluentform.fluentform_wrapper_14 .ff-btn-submit,
+  div.fluentform.fluentform_wrapper_13 .ff-btn-submit {
+    width: 100%;
+  }
+  /* * Page layout for Register/Login/Recovery */
+  body.page-registration div.entry-content,
+  body.page-login div.entry-content,
+  body.page-password-recovery div.entry-content {
+    min-height: 80vh;
+  }
+
+  .fluentform .ff-el-group {
+    margin-bottom: 1rem !important;
+  }
+}
+
+/* Popup Form | Home Page | start */
+div#ff_modal_instance_1 {
+  border-radius: 15px;
+}
+/* Popup Form | Home Page | end */
+/* ? Fluent Forms Pro | end */
+
+div.ff-el-form-check {
+  background-color: white;
+  border-radius: 15px;
+  padding: 0px 25px;
+  box-shadow: var(--box-shadow);
+  margin-bottom: 1rem;
+}
+
+.fluentform .ff-el-form-check label.ff-el-form-check-label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.fluentform .ff-el-form-check-label .ff-el-form-check-input {
+  margin-right: 0.5rem !important;
+  top: 0px !important;
+}
+
+.fluentform .ff-el-tc label.ff_tc_label > span {
+  padding-top: 0px !important;
+}
+.fluentform .ff-el-tc label.ff_tc_label > span input {
+  margin-left: 1.5rem !important;
+}
+/* ! Tutoring Page | end */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 100px transparent inset !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+  -webkit-text-fill-color: #171717 !important;
+}
+
+/* Custom Classes */
+/* Custom border radius condition */
+.no--helper .ff-el-input--content {
+  border-radius: 15px !important;
+}
+
+@media (min-width: 968px) {
+  div.ff-el-input--content input,
+  div.ff-el-input--content div.choices,
+  div.ff-el-group.college--helper-stax div.ff-el-input--content select,
+  div.ff-el-group.has-conditions div.ff-el-input--content select,
+  div.ff-el-input--content textarea {
+    padding: 1.5rem 50px;
+  }
+}
+
+/* Custom validations and classes */
+.validation--valid {
+  background-color: #00a300 !important;
+}
+
+.validation--invalid {
+  background-color: #cc0000 !important;
+}
+
+.validation--invalid input,
+.validation--valid input,
+.validation--invalid div.choices__item,
+.validation--valid div.choices__item {
+  color: white !important;
+}
+
+div.choices__list.choices__list--dropdown {
+  background-color: var(--promo-bg);
+}
+
+.validation--invalid input::placeholder,
+.validation--valid input::placeholder {
+  color: white !important;
+}

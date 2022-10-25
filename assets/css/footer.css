@@ -1,0 +1,135 @@
+:root {
+    --solid-white: #f1ecec;
+}
+/* ! FOOTER GLOBAL EDIT | START */
+
+footer.footer-bottom {
+    padding: 0px !important;
+  }
+  
+  div.fl_width.footer {
+    /* background: #15535b; */
+    background-color: #234299;
+  }
+  div.fl_width.footer div.footer--intro p:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 10px 0px;
+  }
+  
+  div.footer--section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-weight: 300;
+    color: var(--solid-white);
+  }
+  
+  div.footer--section .constainer_custom {
+    padding: 0px;
+  }
+  
+  div.footer--section div.footer_block:first-child {
+    flex: 1 1 30% !important;
+  }
+  
+  div.footer--section div.footer_block {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  div.footer--section label {
+    width: 100%;
+    color: var(--solid-white);
+    font-weight: bold;
+  }
+  
+  div.footer--section div.footer_block p {
+    font-size: 16px !important;
+  }
+  
+  div.footer--section ul {
+    margin-left: 0px !important;
+    width: 100%;
+    list-style: none;
+    padding-left: 20px;
+    color: var(--solid-white);
+    font-weight: bold;
+  
+    position: relative;
+  }
+  
+  div.footer--section ul li::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url("https://entermedschool.com/wp-content/uploads/2021/07/link.png");
+    background-size: 16px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    margin-top: 5px;
+  }
+  
+  div.footer--section div.footer_block:nth-child(4) ul li:last-child::before {
+    background-image: url("https://entermedschool.com/wp-content/uploads/2021/07/location.png");
+  }
+  
+  div.footer--section div.footer_block:last-child {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  
+  div.footer--section div.footer_block:last-child img:first-child {
+    margin-right: 1rem;
+    box-shadow: rgba(97, 93, 250, 0.15) 3px 3px 12px 0px !important;
+    border-radius: 15px;
+  }
+  
+  div.footer--section ul li,
+  div.footer--section ul li a {
+    font-weight: 400;
+    color: var(--solid-white);
+  }
+  
+  /* Social Icons */
+  
+  div.footer--section div.footer_block:nth-child(4) div.social--icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+  
+  div.footer--section div.footer_block:nth-child(4) div.social--icons a {
+    margin-right: 0.5rem;
+    background-color: var(--solid-white);
+    padding: 5px;
+    border-radius: 100%;
+    display: flex;
+    width: 30px;
+  }
+  
+  /* ? Mobile Up to 600px | START */
+  @media only screen and (max-width: 600px) {
+    div.footer--section div.footer_block:last-child {
+      flex-direction: column;
+    }
+    div.footer--section div.footer_block:last-child a {
+      width: 100%;
+    }
+  
+    div.footer--section div.footer_block:last-child a img {
+      width: 100%;
+      height: 60px;
+      object-fit: contain;
+      background-color:var(--solid-white);
+      margin-top: 1rem;
+    }
+  }
+  /* ! FOOTER GLOBAL EDIT | END */

@@ -1,0 +1,65 @@
+.bb-course-status-content .ld-status,
+.btn-advance,
+.learndash_checkout_button,
+.bb-course-type {
+  border-radius: 15px !important;
+  padding: 10px !important;
+  min-height: 50px;
+
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px !important;
+}
+
+.learndash_checkout_buttons,
+.learndash_checkout_button {
+  margin: 0px !important;
+}
+
+.bb-course-type {
+  background-color: var(--newsfeed-tabs-bg);
+  color: rgba(255, 255, 255, 1) !important;
+  width: 100%;
+}
+
+.bb-course-type::before {
+  content: "Course Price: ";
+  margin-right: 5px;
+}
+
+/* Course Author */
+.bb-instructor-wrap {
+  padding: 10px;
+  align-items: center !important;
+}
+
+.bb-about-instructor .bb-grid {
+  border-radius: 15px;
+}
+
+/* Course Payment Dropdown Menu */
+.jq-dropdown-menu {
+  border-radius: 15px !important;
+  border: none !important;
+}
+
+/* Paypal button */
+/* .checkout-dropdown-button .learndash_checkout_button .learndash_paypal_button #btn-join {
+  background-color: #3b7bbf !important;
+  font-weight: bold !important;
+  color: white !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 15px;
+} */
+
+/* Stripe button */
+/* .checkout-dropdown-button .learndash_checkout_button .learndash-stripe-checkout-button.btn-join {
+  background-color: #6772e5 !important;
+  font-weight: bold !important;
+  color: white !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 15px !important;
+} */
