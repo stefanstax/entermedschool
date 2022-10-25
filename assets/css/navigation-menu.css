@@ -1,0 +1,581 @@
+:root {
+  --box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.06);
+  --dark-text: #313131;
+  --promo-bg: #efbe13;
+  --promo-text: #234299;
+  --white-bg: #fcfcfc;
+}
+/* ! Navigation Layout | start */
+
+header#masthead a.signup {
+  color: var(--dark-text) !important;
+}
+header#masthead i.bb-icon-menu-dots-h {
+  color: var(--dark-text);
+}
+
+/* ? On Scroll change link color */
+body ul#primary-menu li > a,
+body ul#primary-menu li::after,
+body div#header-aside div,
+body div.user-wrap a,
+body div#navbar-collapse a i,
+body div#header-aside a i,
+a.signin-button {
+  color: var(--dark-text) !important;
+}
+
+body div.bb-left-panel-icon-wrap a i,
+body div.header-aside a i {
+  color: var(--dark-text) !important;
+}
+
+.primary-menu.bb-primary-overflow {
+  overflow: visible !important;
+}
+
+/* ! Mobile navigation @fix */
+.bb-mobile-panel-wrapper {
+  top: 0px !important;
+  z-index: 1000 !important;
+}
+
+body div.bb-grid {
+  padding-top: 0px;
+}
+
+div.ab-submenu {
+  left: 0px !important;
+  right: 0px !important;
+  position: fixed !important;
+  top: 60px !important;
+  border-radius: 0px 0px 15px 15px !important;
+  z-index: 100 !important;
+}
+
+div.ab-submenu ul.bb-sub-menu {
+  max-width: 968px !important;
+  margin: 0.5rem auto;
+}
+
+li.trp-language-switcher-container div.wrapper.ab-submenu ul.bb-sub-menu {
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+  flex-wrap: wrap !important;
+}
+
+.site-header
+  #primary-navbar
+  #navbar-collapse
+  .sub-menu
+  .wrapper
+  .sub-menu-inner
+  .menu-item
+  .ab-submenu {
+  width: 100% !important;
+}
+
+@media only screen and (min-width: 800px) {
+  /* div.ab-submenu {
+    top: 121px !important;
+  } */
+
+  ul#primary-menu li > div.wrapper.ab-submenu ul.bb-sub-menu li::after {
+    color: #2c3e50 !important;
+    top: 2px !important;
+    font-size: 30px !important;
+    transform: rotate(90deg) !important;
+  }
+
+  ul#primary-menu li > div.wrapper.ab-submenu ul.bb-sub-menu li > a {
+    color: #122b46 !important;
+    font-size: 17px !important;
+    font-weight: 500;
+  }
+
+  ul#primary-menu li.trp-language-switcher-container div.wrapper.ab-submenu {
+    min-width: 500px !important;
+    left: 10px;
+  }
+
+  ul#primary-menu
+    li
+    > div.wrapper.ab-submenu
+    ul.bb-sub-menu
+    li
+    div.wrapper.ab-submenu
+    ul.bb-sub-menu
+    li
+    a {
+    color: #545454 !important;
+    font-size: 15px !important;
+    font-weight: 300 !important;
+  }
+
+  ul#primary-menu li.main-item a,
+  ul#primary-menu li.main-item::after {
+    color: var(--dark-text) !important;
+  }
+
+  ul#primary-menu li > div.wrapper.ab-submenu ul.bb-sub-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  ul#primary-menu > li a {
+    font-weight: 700 !important;
+  }
+
+  ul#primary-menu
+    li
+    div.wrapper.ab-submenu
+    ul.bb-sub-menu
+    li.menu-item-has-children
+    div.wrapper.ab-submenu
+    ul.bb-sub-menu {
+    flex-direction: column;
+  }
+
+  ul#primary-menu li:hover > div.wrapper.ab-submenu ul.bb-sub-menu li div.wrapper.ab-submenu {
+    position: static !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    box-shadow: none;
+    transition: all 0.5s ease-in-out;
+  }
+
+  ul#primary-menu li > div.wrapper.ab-submenu ul.bb-sub-menu li div.wrapper.ab-submenu {
+    position: static !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    box-shadow: none;
+  }
+
+  ul#primary-menu
+    li.menu-has-children.no-icon:hover
+    > div.wrapper.ab-submenu
+    ul.bb-sub-menu
+    li
+    div.wrapper.ab-submenu
+    ul.bb-sub-menu {
+    position: static;
+    box-shadow: none !important;
+    flex-direction: column;
+    position: static !important;
+  }
+
+  ul#primary-menu li.main-item > div.wrapper.ab-submenu {
+    top: 65px !important;
+    left: 0px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px !important;
+  }
+
+  /* * Minimum width each navigation box should have - first child after main item | IMAT -> div */
+  ul#primary-menu li.main-item.no-icon > div.wrapper.ab-submenu,
+  ul#primary-menu li.main-item.no-icon > div.wrapper.ab-submenu,
+  ul#primary-menu li.main-item.no-icon > div.wrapper.ab-submenu {
+    min-width: 800px;
+  }
+
+  ul#primary-menu li.menu-item-object-custom > div.wrapper.ab-submenu > li div.wrapper.ab-submenu,
+  ul#primary-menu li.menu-item-object-custom > div.wrapper.ab-submenu > li div.wrapper.ab-submenu {
+    min-width: 100% !important;
+  }
+
+  /* ul#primary-menu li:hover > div.wrapper.ab-submenu {
+    transition: all 0.25s ease-in !important;
+  } */
+
+  /* * Child items width */
+  ul#primary-menu li > div.wrapper.ab-submenu ul.bb-sub-menu li {
+    flex: 1 1 33% !important;
+    max-width: 33%;
+  }
+
+  /* * Child items width - short menus - BMAT - NEET - BLOG */
+  ul#primary-menu li.bmat-menu > div.wrapper.ab-submenu {
+    min-width: 300px !important;
+  }
+  ul#primary-menu li.blog-menu > div.wrapper.ab-submenu {
+    min-width: 300px !important;
+  }
+  ul#primary-menu li.language-menu > div.wrapper.ab-submenu {
+    min-width: 500px !important;
+  }
+  ul#primary-menu li.language-menu a span.trp-ls-language-name {
+    font-weight: 700 !important;
+  }
+  ul#primary-menu li.neet-menu > div.wrapper.ab-submenu {
+    min-width: 500px !important;
+  }
+
+  /* * First child label for main item | IMAT -> section name */
+  ul#primary-menu li.bmat-menu > div.wrapper.ab-submenu ul.bb-sub-menu li,
+  ul#primary-menu li.blog-menu > div.wrapper.ab-submenu ul.bb-sub-menu li {
+    flex: 1 1 100% !important;
+    max-width: 100%;
+  }
+
+  ul#primary-menu li.neet-menu > div.wrapper.ab-submenu ul.bb-sub-menu li {
+    flex: 1 1 50% !important;
+    max-width: 50%;
+  }
+
+  /* * Children for first line after main item | IMAT -> section name -> children of the section */
+  ul#primary-menu li.neet-menu > div.wrapper.ab-submenu ul.bb-sub-menu li div ul li,
+  ul#primary-menu li.blog-menu > div.wrapper.ab-submenu ul.bb-sub-menu li div ul li {
+    flex: 1 1 100% !important;
+    max-width: 100%;
+  }
+
+  /* * Child items width - short menus - BMAT - NEET - BLOG | end */
+
+  ul#primary-menu li > div.wrapper.ab-submenu ul.bb-sub-menu li div ul li.nav-child a {
+    width: 100% !important;
+  }
+
+  ul#primary-menu li > div.wrapper.ab-submenu ul.bb-sub-menu li ul > li {
+    max-width: 100%;
+  }
+
+  /* ul#primary-menu
+    li:last-child
+    > div.wrapper.ab-submenu
+    ul.bb-sub-menu
+    li
+    ul
+    > li {
+    flex: 1 1 20% !important;
+    max-width: 20%;
+  } */
+
+  ul#primary-menu li div.wrapper.ab-submenu ul.bb-sub-menu > li a {
+    padding: 15px;
+  }
+
+  ul#primary-menu li div.wrapper.ab-submenu ul.bb-sub-menu li a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  ul#primary-menu li div.wrapper.ab-submenu ul.bb-sub-menu li a i {
+    color: #1d58aa;
+  }
+
+  ul#primary-menu li > div.wrapper.ab-submenu::before {
+    left: 58px !important;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  header#masthead ul#primary-menu a,
+  header#masthead i {
+    font-weight: 700 !important;
+  }
+
+  div.gamification {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* Space between each menu item that has items inside */
+  .primary-menu > .menu-item-has-children:not(.hideshow) {
+    padding: 0px 30px !important;
+  }
+
+  .site-header #primary-navbar .primary-menu .menu-item > .ab-submenu .bb-sub-menu {
+    margin: 0 auto !important;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .primary-menu > .menu-item-has-children:not(.hideshow) {
+    padding: 0px 40px !important;
+  }
+
+  /* div.ab-submenu {
+    top: 86px !important;
+  } */
+}
+
+@media only screen and (min-width: 1920px) {
+  .primary-menu > .menu-item-has-children:not(.hideshow) {
+    padding: 0px 50px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .bb-mobile-panel-inner .sub-menu.bb-open {
+    padding: 0px !important;
+  }
+}
+
+.side-panel-menu a,
+.side-panel-menu .current-menu-item > i,
+.buddypanel .bb-toggle-panel,
+.site-header .bb-toggle-panel,
+.side-panel-menu i,
+.bb-mobile-panel-header .user-name,
+.side-panel-menu .current-menu-item .sub-menu a,
+.side-panel-menu .current-menu-item .sub-menu i,
+.bb-mobile-panel-inner .bb-primary-menu a,
+.site-header .bb-mobile-panel-inner .sub-menu a {
+  color: #303030 !important;
+  font-weight: 700 !important;
+}
+
+/* ! Navigation Layout | end */
+
+/* todo Download Banner | END */
+
+/* ? Share Icons | START */
+div.bb-share-container {
+  left: 10% !important;
+}
+
+/* ? Share Icons | END */
+
+/* ! Scrollbar CSS START */
+::-webkit-scrollbar {
+  background-color: var(--dark-text) !important;
+  width: 7px !important;
+}
+
+p::-webkit-scrollbar {
+  width: 4px !important;
+}
+
+p::-webkit-scrollbar-thumb {
+  border-radius: 0px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(silver, #d9d9d9);
+  border-radius: 0px !important;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0px 0px 6px var(--dark-text) !important;
+}
+/* ! Scrollbar CSS END */
+
+/* ! Language Specific Styling | START */
+html:lang("he-IL") div.faq--section-text > h2 {
+  padding-right: 20px;
+  padding-left: 0px;
+}
+/* ! Language Specific Styling | END */
+
+/* ? Navigation Menu | Modifications | START */
+div.trophy {
+  display: none !important;
+}
+
+@media only screen and (max-width: 768px) {
+  div.bb-mobile-panel-inner ul.sub-menu.bb-open {
+    padding-left: 10px;
+  }
+
+  div.bb-mobile-panel-inner ul.sub-menu.bb-open li a {
+    font-size: 14px;
+  }
+
+  div.bb-mobile-panel-wrapper {
+    width: 50% !important;
+  }
+
+  div.bb-mobile-panel-inner {
+    padding: 10px 0px 10px 30px;
+  }
+
+  div.bb-mobile-panel-inner ul.mobile-menu {
+    margin-left: 0px;
+    padding: 0px 15px 0px 0px;
+  }
+
+  .bb-mobile-panel-wrapper.left.closed {
+    left: -100% !important;
+  }
+
+  div.bb-mobile-panel-header div.logo-wrap a img {
+    width: 70%;
+  }
+
+  div.bb-login-section {
+    width: 90%;
+  }
+
+  ul.sub-menu.bb-open {
+    width: 100% !important;
+  }
+
+  /* ? Logged in users, second nav panel */
+  ul.buddypanel-menu.side-panel-menu {
+    display: none;
+  }
+}
+
+/* * Mobile up to 600px | START */
+@media only screen and (max-width: 600px) {
+  div.bb-mobile-panel-wrapper {
+    width: 85% !important;
+  }
+  /* ? Mobile up to 600px | END */
+}
+/* * Tablet up to 1440px | START */
+@media only screen and (max-width: 1440px) {
+  div#primary-navbar {
+    min-width: 100% !important;
+  }
+}
+/* * Tablet up to 1440px | END */
+
+/* * Navigation menu - Profile popup - header-aside | START */
+div.header-aside div.wrapper ul.sub-menu-inner {
+  list-style: none;
+  padding-left: 0px;
+  width: 100% !important;
+}
+
+div.header-aside div.wrapper ul.sub-menu-inner a {
+  color: #121212 !important;
+}
+/* * Navigation menu - Profile popup - header-aside | END */
+
+/* ? Navigation Menu | Modifications | END */
+
+a.more-button + div.sub-menu.active {
+  opacity: 1;
+  visibility: visible;
+  min-width: 100% !important;
+  width: 100% !important;
+  min-width: 800px !important;
+  left: 0px !important;
+  position: fixed !important;
+  top: 90px !important;
+  border-radius: 0px !important;
+}
+
+body.admin-bar a.more-button + div.sub-menu.active {
+  top: 121px !important;
+}
+
+a.more-button + div.sub-menu.active > div.wrapper {
+  max-width: 800px;
+  margin: 0px auto !important;
+}
+
+ul#navbar-extend {
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+  width: 100% !important;
+  list-style: none !important;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+@media (min-width: 769px) {
+  ul#navbar-extend li div.wrapper.ab-submenu {
+    position: relative !important;
+    top: 0px !important;
+    box-shadow: none !important;
+    display: flex !important;
+  }
+  ul#navbar-extend li {
+    min-width: 50%;
+    width: 100%;
+  }
+
+  a.more-button
+    + div.sub-menu.active
+    div.wrapper
+    ul#navbar-extend
+    li
+    div.wrapper.ab-submenu
+    ul.bb-sub-menu {
+    margin: 0.5rem 0px !important;
+  }
+}
+
+.site-header
+  #primary-navbar
+  #navbar-collapse
+  .sub-menu
+  .wrapper
+  .sub-menu-inner
+  .menu-item.menu-item-has-children
+  > a:before {
+  top: 6px !important;
+  transform: rotate(270deg) !important;
+}
+
+/* * Level bar */
+div.progress_bar {
+  background-color: var(--promo-text);
+}
+
+@media only screen and (min-width: 1366px) {
+  div.wrapper.ab-submenu {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: flex-start !important;
+    left: 0px !important;
+    /* top: 59px !important; */
+    box-shadow: none !important;
+    transition: all 0.25s ease-in-out;
+  }
+
+  div.wrapper.ab-submenu {
+    justify-content: center;
+  }
+
+  ul#navbar-extend div.wrapper.ab-submenu {
+    justify-content: flex-start !important;
+  }
+
+  /* * Navigation logo */
+  .site-header-container #site-logo .bb-logo img,
+  .site-header-container #site-logo .site-title img.bb-logo,
+  .site-title img.bb-mobile-logo {
+    max-height: 100% !important;
+  }
+
+  div#site-logo {
+    min-width: 150px !important;
+  }
+}
+
+.site-branding {
+  padding-right: 0px !important;
+}
+
+.more-button.active:after {
+  display: none;
+}
+
+/* ! Testing */
+.site-header
+  #primary-navbar
+  #navbar-collapse
+  .sub-menu
+  .wrapper
+  .sub-menu-inner
+  .menu-item
+  .ab-submenu {
+  margin: 0 auto;
+}

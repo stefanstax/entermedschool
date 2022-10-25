@@ -1,0 +1,232 @@
+:root {
+  --body-color: rgb(243, 244, 245) !important;
+  --box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.06);
+  --box-background: #fff;
+}
+/* ? Team Section | START */
+div.team--section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.team--section > h4 {
+  text-transform: uppercase;
+  color: #6ec1e4;
+  font-weight: bold;
+}
+
+div.team--section > h3 {
+  font-weight: bold;
+}
+
+div.team--section > p {
+  width: 70%;
+  text-align: center;
+}
+
+div.team--section-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+div.team--section-layout div.team--section-layout_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 0 1 23%;
+  margin: 10px;
+  background-color: white;
+  box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.06);
+  border-radius: 10px;
+  border-top: 5px solid rgba(21, 83, 91, 1) !important;
+
+  position: relative;
+  overflow: hidden;
+}
+
+div.team--section-layout div.team--section-layout_block p.new-member {
+  position: absolute;
+  top: -3px;
+  background-color: orangered;
+  padding: 10px 20px 5px 20px;
+  color: white;
+  left: -23px;
+  transform: rotate(-45deg);
+}
+
+div.team--section-layout div.team--section-layout_block div.layout_block-image,
+div.team--section-layout div.team--section-layout_block div.layout_block-legend,
+div.team--section-layout
+  div.team--section-layout_block
+  div.layout_block-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.team--section-layout div.team--section-layout_block div.layout_block-legend,
+div.team--section-layout
+  div.team--section-layout_block
+  div.layout_block-content {
+  padding: 20px;
+}
+
+div.team--section-layout
+  div.team--section-layout_block
+  div.layout_block-image
+  a
+  img {
+  box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.06);
+}
+
+div.team--section-layout
+  div.team--section-layout_block
+  div.layout_block-legend
+  h4 {
+  font-size: 17px;
+  font-weight: bold;
+  height: 50px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+div.team--section-layout
+  div.team--section-layout_block
+  div.layout_block-legend
+  h5,
+div.team--section-layout
+  div.team--section-layout_block
+  div.layout_block-legend
+  p {
+  color: rgba(21, 83, 91, 1) !important;
+  font-size: 17px;
+  font-weight: 300;
+  margin: 0px;
+  text-align: center;
+}
+
+div.team--section-layout
+  div.team--section-layout_block
+  div.layout_block-legend
+  p {
+  margin: 0.25rem auto;
+}
+
+div.team--section-layout
+  div.team--section-layout_block
+  div.layout_block-legend
+  h5 {
+  font-weight: bold;
+}
+
+div.team--section-layout
+  div.team--section-layout_block
+  div.layout_block-content {
+  width: 100%;
+  flex-direction: row !important;
+  background-color: rgba(21, 83, 91, 1) !important;
+  box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.06);
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+div.team--section-layout
+  div.team--section-layout_block
+  div.layout_block-content
+  a {
+  /* padding: 10px; */
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+  border-radius: 100%;
+  margin: 0.5rem;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+div.team--section-layout
+  div.team--section-layout_block
+  div.layout_block-content
+  a
+  img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(100);
+}
+
+div.team--section-layout
+  div.team--section-layout_block
+  > div.layout_block-image
+  img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+div.team--section > a {
+  margin: 1rem auto;
+  background-color: rgba(21, 83, 91, 1) !important;
+  color: white;
+  padding: 10px 5%;
+  box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.06);
+  border-radius: 10px;
+}
+
+/* ? Tablet up to 1440px | START */
+@media only screen and (max-width: 1440px) {
+  div.team--section {
+    padding: 10px;
+  }
+
+  div.team--section-layout div.team--section-layout_block {
+    flex: 0 1 30% !important;
+  }
+
+  div.team--section > a {
+    margin: 1rem auto;
+    background-color: rgba(21, 83, 91, 1) !important;
+    color: white;
+    padding: 10px 20%;
+    border-radius: 10px;
+  }
+}
+/* ? Tablet up to 1440px | END */
+/* ? Tablet up to 768px | START */
+/* @media only screen and (max-width: 768px) {
+  div.team--section-layout div.team--section-layout_block {
+    height: 380px;
+  }
+} */
+/* ? Tablet up to 768px | END */
+/* ? Mobile up to 600px | START */
+@media only screen and (max-width: 600px) {
+  div.team--section-layout div.team--section-layout_block {
+    flex: 1 1 100% !important;
+    padding: 20px;
+    margin: 0.5rem;
+  }
+
+  div.team--section > p {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+
+  div.team--section > h3 {
+    text-align: center;
+  }
+
+  body.page-id-27295 div.team--section-layout div.team--section-layout_block {
+    height: 100%;
+  }
+}
+/* ? Mobile up to 600px | END */
+
+/* ? Team Section | END */
