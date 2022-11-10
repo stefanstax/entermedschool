@@ -5,4 +5,4 @@ deployment:
     - export DEPLOYPATH=/home/entermedpermit/staging/wp-content/themes/buddyboss-theme-child/
 
 # This line copies the index.php file to deploy path - the document root of your website:
-    - cp index.php $DEPLOYPATH
+    - cp -r * $DEPLOYPATH
